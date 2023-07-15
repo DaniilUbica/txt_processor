@@ -1,12 +1,15 @@
 [package]
-name = "TxtProcessor"
-version = "0.1.0"
+name = "txt_processor"
+version = "0.1.1"
 license = "MIT"
 author = "Daniil Volkov"
 description = "A little library for text processing"
-documentation = "https://docs.rs/TxtProcessor"
+homepage = "https://github.com/DaniilUbica/txt_processor"
+repository = "https://github.com/DaniilUbica/txt_processor"
+documentation = "https://docs.rs/TxtProcess"
 readme = "README.md"
-keywords = ["text processing"]
+categories = ["text"]
+keywords = ["text-processing"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]

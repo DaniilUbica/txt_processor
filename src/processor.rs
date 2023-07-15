@@ -254,6 +254,7 @@ impl TxtProcessor {
             }
             i += 1;
         }
+        result.push(self.content.chars().last().unwrap());
         self.content = result;
     }
     /// Search for all words matching this regular expression
@@ -263,6 +264,13 @@ impl TxtProcessor {
             w.push(String::from(cap.as_str()));
         }
         w
+    }
+    /// Adds text to this TxtProcessor's content
+    pub fn add_to_content(&mut self, text: String) {
+        let w = count_words(&text);
+        self.content = self.content.clone() + &text;
+        self.words = self.words + w;
+        self.lines = self.lines + text.lines().count();
     }
 
     /// Returns lines amount

@@ -1,6 +1,6 @@
-extern crate txtlib;
+extern crate txt_processor;
 
-use txtlib::*;
+use txt_processor::*;
 
 fn main() {
     let t = TxtProcessor::from_str(String::from("Crazy Fredrick bought many very exquisite opal jewels."));

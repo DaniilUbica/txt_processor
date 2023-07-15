@@ -1,11 +1,11 @@
-//! # TxtProcessor
+//! # txt_processor
 //!
 //! A little library for text processing
 //! ## Example
 //! ```rust
-//! extern crate txtlib;
-//! 
-//! use txtlib::*;
+//! extern crate txt_processor;
+//!
+//! use txt_processor::*;
 //! 
 //! fn main() {
 //!     let mut t = TxtProcessor::from_str(String::from("This is text for example!"));
