@@ -1,12 +1,12 @@
 [package]
 name = "txt_processor"
-version = "0.1.2"
+version = "0.1.3"
 license = "MIT"
 author = "Daniil Volkov"
 description = "A little library for text processing"
 homepage = "https://github.com/DaniilUbica/txt_processor"
 repository = "https://github.com/DaniilUbica/txt_processor"
-documentation = "https://docs.rs/TxtProcess"
+documentation = "https://docs.rs/txt_processor"
 readme = "README.md"
 categories = ["text"]
 keywords = ["text-processing"]
