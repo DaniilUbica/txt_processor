@@ -1,4 +1,4 @@
-# mematrica [![Package][package-img]][package-url] [![Documentation][documentation-img]][documentation-url]
+# txt_processor [![Package][package-img]][package-url] [![Documentation][documentation-img]][documentation-url]
 
 ## A little library for text processing.
 
@@ -16,7 +16,7 @@
 ## Usage
 ```toml
 [dependencies]
-txt_processor = "0.1.1"
+txt_processor = "0.1.2"
 ```
 ## Examples
 ```rust
