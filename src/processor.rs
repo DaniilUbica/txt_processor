@@ -186,10 +186,12 @@ impl TxtProcessor {
     pub fn replace_word(&mut self, from: &str, to: &str) {
         let regex = Regex::new(&(r"\b".to_string() + from + r"\b")).unwrap();
         self.content = regex.replace_all(&self.content, to).to_string();
+        self.words = count_words(&self.content);
     }
     /// Replaces all characters 'from' on character 'to'
     pub fn replace_char(&mut self, from: char, to: char) {
         self.content = self.content.replace(from, &to.to_string());
+        self.words = count_words(&self.content);
     }
     /// Rewrites file with self.content
     pub fn rewrite_file(&self, file_path: &str) -> Result<(), Error> {
@@ -256,6 +258,7 @@ impl TxtProcessor {
         }
         result.push(self.content.chars().last().unwrap());
         self.content = result;
+        self.words = count_words(&self.content);
     }
     /// Search for all words matching this regular expression
     pub fn search_with_regex(&self, regex: Regex) -> Vec<String> {
