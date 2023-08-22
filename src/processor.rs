@@ -258,7 +258,6 @@ impl TxtProcessor {
         }
         result.push(self.content.chars().last().unwrap());
         self.content = result;
-        self.words = count_words(&self.content);
     }
     /// Search for all words matching this regular expression
     pub fn search_with_regex(&self, regex: Regex) -> Vec<String> {

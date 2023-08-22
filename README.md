@@ -16,7 +16,7 @@
 ## Usage
 ```toml
 [dependencies]
-txt_processor = "0.1.3"
+txt_processor = "0.1.4"
 ```
 ## Examples
 ```rust
